@@ -1,0 +1,11 @@
+{% extends 'try/layout.html' %}
+{% block body %}
+    <h1>Add tasks</h1>
+    <form action="{% url 'try:add' %}" method="post">
+        {% csrf_token %}
+    <!-- <input type="text" name="task"> -->
+       {{form}}
+    <input type="submit">
+    </form>
+    <a href="{% url 'try:index' %}">Home</a>    
+{% endblock %}

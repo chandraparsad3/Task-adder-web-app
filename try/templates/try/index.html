@@ -1,0 +1,12 @@
+{% extends 'try/layout.html' %}
+{% block body %}
+    <h1>Tasks</h1>
+    <ul>
+    {% for result in tasks %}
+      <li>{{ result }}</li>
+    {% empty %}
+       <li>No Tasks.</li>
+    {% endfor %}
+    </ul>
+    <a href="{% url 'try:add' %}">Add</a>
+{% endblock %}
