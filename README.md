@@ -1,7 +1,5 @@
 # Task Adding Web App
 
-![Web App Screenshot](screenshot.png)
-
 Welcome to the Task Adding Web App project! This Django-based web application empowers you to effortlessly manage your tasks.
 
 ## Features
